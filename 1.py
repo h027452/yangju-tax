@@ -9,7 +9,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # --- 0. PDF 한글 폰트 설정 ---
 try:
-    font_path = malgun.ttf"
+    font_path = "malgun.ttf"
     pdfmetrics.registerFont(TTFont('Malgun', font_path))
     pdf_font = 'Malgun'
 except:
@@ -187,3 +187,4 @@ with tab2:
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         type="primary"
     )
+
